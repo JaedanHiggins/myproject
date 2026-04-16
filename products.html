@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Catalog</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">SecureCam</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <div class="themeButton">
+            </div>
+        </nav>
+
+
+        <div class="menu-icon">x
+            ☰
+        </div>
+        <button id="themeToggle">Dark Mode</button>
+
+
+    </header>
+    <section class="camera-section">
+        <h1>Our Best Models</h1>
+
+        <div class="filters">
+            <button class="filter-btns all" onclick="applyFilter('all')">All</button>
+            <button class="filter-btns indoor" onclick="applyFilter('indoor')"> Indoor</button>
+            <button class="filter-btns outdoor" onclick="applyFilter('outdoor')">Outdoor </button>
+            <button class="filter-btns wireless" onclick="applyFilter('wireless')"> Wireless</button>
+            <button class="filter-btns wired" onclick="applyFilter('wired')">Wired</button>
+        </div>
+
+        <div class="camera-grid">
+
+            <div class="camera-card indoor wireless">
+                <img src="camera1.jpg" alt="Indoor Wireless Camera">
+                <div class="card-content">
+                    <h3>Indoor Wireless Cam</h3>
+                    <p>Perfect for monitoring inside your home.</p>
+                </div>
+            </div>
+
+            <div class="camera-card outdoor wired">
+                <img src="camera2.jpg" alt="outdoor Wired Camera">
+                <div class="card-content">
+                    <h3>Outdoor Wired Cam</h3>
+                    <p>Built to withstand harsh weather conditions.</p>
+                </div>
+            </div>
+
+            <div class="camera-card outdoor wireless">
+                <img src="camera3.jpg" alt="outdoor Wireless Camera">
+                <div class="card-content">
+                    <h3>Wireless Outdoor Cam</h3>
+                    <p>Easy installation with no cables required.</p>
+                </div>
+            </div>
+
+            <div class="camera-card indoor wired">
+                <img src="camera4.jpeg" alt="Indoor Wired Camera">
+                <div class="card-content">
+                    <h3>Indoor Wired Cam</h3>
+                    <p>Reliable connection for consistent performance.</p>
+                </div>
+            </div>
+
+            <div class="camera-card outdoor wired wireless">
+                <img src="camera5.webp" alt="Night Vision Camera">
+                <div class="card-content">
+                    <h3>Night Vision Cam</h3>
+                    <p>Clear footage even in complete darkness.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <script src="products.js"></script>
+
+</body>
+
+</html>

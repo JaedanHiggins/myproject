@@ -1,0 +1,298 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   background: #0a1f33;
+   color: white;
+   padding: 1rem 2rem;
+   gap: 64px;
+}
+
+
+.logo {
+   font-size: 1.5rem;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav {
+   display: none;
+}
+
+
+.nav a {
+   margin-left: 24px;
+   text-decoration: none;
+   color: white;
+   font-weight: 500;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.menu-icon {
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+
+
+
+
+#themeToggle {
+   margin-left: auto;
+   padding: 12px;
+   border-radius: 24px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+h1 {
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   margin-bottom: 56px;
+   margin-top: 40px;
+}
+
+
+.hero {
+   text-align: center;
+   padding: 24px 24px;
+   background: #f4f7fa;
+}
+
+
+.hero h1 {
+   font-size: 2rem;
+   margin-bottom: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hero p {
+   color: #555;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.products {
+   display: flex;
+   flex-direction: column;
+   padding: 40px 20px;
+   gap: 30px;
+}
+
+
+.product-card {
+   background: white;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+   padding: 20px;
+   text-align: center;
+}
+
+
+.product-card img {
+   width: 100%;
+   border-radius: 8px;
+   margin-bottom: 15px;
+}
+
+
+.product-card h2 {
+   margin-bottom: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.product-card p {
+   color: #555;
+   margin-bottom: 15px;
+}
+
+
+.product-card button {
+   padding: 10px 18px;
+   border: none;
+   background: #0a1f33;
+   color: white;
+   border-radius: 6px;
+   cursor: pointer;
+}
+
+
+.bodytext {
+   font-weight: lighter;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media (min-width: 768px) {
+
+
+   .nav {
+      display: block;
+   }
+
+
+   .menu-icon {
+      display: none;
+   }
+
+
+   .products {
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+
+   .product-card {
+      width: 30%;
+   }
+
+
+   .hero h1 {
+      font-size: 2.5rem;
+   }
+}
+
+
+
+
+.dark-mode {
+   background-color: #0a1f33;
+   color: white;
+}
+
+
+.dark-mode .hero {
+   background-color: #0a1f33;
+   color: white;
+}
+
+
+.dark-mode h1,
+s h2 {
+   color: white;
+}
+
+
+.dark-mode,
+h2 {
+   color: black;
+}
+
+
+.splide {
+   max-width: 800px;
+   margin: 0 auto;
+   margin-bottom: 40px;
+}
+
+.splide__slide img {
+   width: 80%;
+   aspect-ratio: 4/3;
+   object-fit: cover;
+   border: 3px solid #555;
+   border-radius: 24px;
+   padding: 24px;
+}
+
+.slide-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+
+.slide-label {
+   margin-bottom: 16px;
+   font-size: 14px;
+   color: #333;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: large;
+}
+
+.hero img {
+   width: 15%;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background: #f5f5f5;
+}
+
+
+.camera-section {
+   padding: 40px 5%;
+   text-align: center;
+}
+
+.filters {
+   margin-bottom: 30px;
+}
+
+.filter-btns {
+   padding: 10px 20px;
+   margin: 5px;
+   border: 1px solid #ddd;
+   background: white;
+   cursor: pointer;
+   border-radius: 8px;
+   transition: all 0.3s ease;
+}
+
+.filter-btns.active {
+   background: #222;
+   color: white;
+   border-color: #222;
+}
+
+.camera-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   gap: 25px;
+}
+
+.camera-card {
+   background: white;
+   border-radius: 12px;
+   overflow: hidden;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+   transition: transform 0.2s;
+}
+
+.camera-card:hover {
+   transform: translateY(-5px);
+}
+
+.camera-card img {
+   width: 100%;
+   height: 200px;
+   margin: 24px;
+   object-fit: cover;
+}
+
+.card-content {
+   padding: 15px;
+}
+
+.hide {
+   display: none !important;
+}
+
+.hide {
+   display: none !important;
+}
